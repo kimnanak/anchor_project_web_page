@@ -1,0 +1,19 @@
+/* TEST */
+
+.test{
+position: absolute;
+width: 177px;
+height: 85px;
+left: 513px;
+top: 393px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 70px;
+line-height: 85px;
+/* identical to box height */
+
+
+color: #000000;
+}
