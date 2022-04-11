@@ -1,19 +1,15 @@
-/* TEST */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
 
-.test{
-position: absolute;
-width: 177px;
-height: 85px;
-left: 513px;
-top: 393px;
+body {
+    font-family: "Roboto", sans-serif;
+}
 
-font-family: 'Inter';
-font-style: normal;
-font-weight: 400;
-font-size: 70px;
-line-height: 85px;
-/* identical to box height */
+/*  Navigation */
 
-
-color: #000000;
+.nav-container{
+    background: #292828;
+    height: 80px;
 }

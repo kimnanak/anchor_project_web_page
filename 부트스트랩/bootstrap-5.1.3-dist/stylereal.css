@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+/*  Navigation */
+
+.nav-container{
+    background: #e05e08;
+    height: 70px;
+}
+
+.wrapper{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    height: 95px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+nav ul {
+    display: flex;
+    height: 90px;
+}
+
+nav ul {display:flex;text-align: center;}
+nav ul li {padding: 20px 10px;}
+
+nav .logo{
+    font-family: "Poppins";
+font-style: normal;
+font-weight: 800;
+font-size: 35px;
+line-height: 46px;
+/* identical to box height */
+color: #FFFFFF;
+}
+
+.nav-items li{
+    /* 글자 위로 약간 뜬게 여기가 문제인거 같은데 */
+    list-style: none;
+    margin-right: 100px;
+}
+
+.nav-items li:nth-last-of-type(1){
+    margin: 0;
+}
+
+.nav-items li a {
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    text-decoration: none;
+}
+
+/* Header */
+.header-container{
+    background-color: #FFFFFF;
+
+}
+
+/* Hidden Items */
+.search-box {
+    display: none;
+}
+
+
+/* 금주의 도서 자리 */
+header h1{    
+    text-align: center;
+}
+
+.books{
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+
+
+
+
+.summary-content{
+    display: flex;
+    flex-wrap: wrap;
+
+    
+}
