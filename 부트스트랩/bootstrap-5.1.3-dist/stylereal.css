@@ -11,7 +11,11 @@ body {
 
 .nav-container{
     background: #e05e08;
-    height: 70px;
+    box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+    height: 72px;
+    margin-top: -65px;
+    z-index: 500;
+    position: relative;
 }
 
 .wrapper{
@@ -73,9 +77,34 @@ color: #FFFFFF;
 
 /* Hidden Items */
 .search-box {
-    display: none;
+    width: 1200px;
+    margin: 0 auto;
+    text-align: right;
+    position: relative;
+    top: 0;
+    z-index: 101;
+    
+    transition: 300ms;
 }
 
+.search-box input {
+    background: #fffffa;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    border-radius: 0px 0px 8px 8px;
+
+    font-size: 24px;
+    line-height: 42px;
+    border: 0;
+    padding: 12px 48px;
+}
+  
+.search-box input::placeholder {
+    color: #b3b3b3;
+}
+
+.search-box.active {
+    top: 72px;
+}
 
 /* 금주의 도서 자리 */
 header h1{    
@@ -88,13 +117,37 @@ header h1{
     
 }
 
-
-
-
-
-.summary-content{
+/* 검색아이콘 */
+.nav-btn-container{
     display: flex;
-    flex-wrap: wrap;
-
-    
+    position: relative;   
 }
+
+.nav-btn-container img{
+    position: absolute;
+}
+
+.nav-btn-container .close-btn{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+    transition: 300ms;
+}
+
+.nav-btn-container .search-btn{
+    pointer-events: auto;
+    transition: 300ms;
+}
+
+.nav-btn-container.active .search-btn{
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-8px);
+}
+
+.nav-btn-container.active .close-btn{
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
