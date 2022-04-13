@@ -4,7 +4,7 @@
 }
 
 body {
-    font-family: "Poppins", sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
 }
 
 /*  Navigation */
@@ -19,7 +19,7 @@ body {
 }
 
 .wrapper{
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
@@ -65,7 +65,7 @@ color: #FFFFFF;
 .nav-items li a {
     color: #FFFFFF;
     font-size: 20px;
-    font-family: "Poppins", sans-serif;
+    font-family: 'Noto Sans KR', sans-serif;
     text-decoration: none;
 }
 
@@ -109,12 +109,27 @@ color: #FFFFFF;
 /* 금주의 도서 자리 */
 header h1{    
     text-align: center;
+    font-weight: 800;
 }
 
 .books{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     
+}
+
+.books{
+    background-color: antiquewhite;
+}
+.summary{
+    font-family: 'Noto Sans KR', sans-serif;
+    background-color: antiquewhite;
+}
+
+.summary-content{
+    margin: 0;
+	width: 200px;
+    background-color: antiquewhite;
 }
 
 /* 검색아이콘 */
