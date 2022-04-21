@@ -1,0 +1,185 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+/*  Navigation */
+
+.nav-container{
+  background: #e05e08;
+  box-shadow: 0px 8px 24px rgba(0, 0, 0, 0.1);
+  height: 72px;
+  margin-top: -65px;
+  z-index: 500;
+  position: relative;
+}
+
+.wrapper{
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.logo {
+  height: 95px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+nav ul {
+  display: flex;
+  height: 90px;
+}
+
+nav ul {display:flex;text-align: center;}
+nav ul li {padding: 20px 10px;}
+
+nav .logo{
+  font-family: "Poppins";
+font-style: normal;
+font-weight: 800;
+font-size: 35px;
+line-height: 46px;
+/* identical to box height */
+color: #FFFFFF;
+}
+
+.nav-items li{
+  /* 글자 위로 약간 뜬게 여기가 문제인거 같은데 */
+  list-style: none;
+  margin-right: 100px;
+}
+
+.nav-items li:nth-last-of-type(1){
+  margin: 0;
+}
+
+.nav-items li a {
+  color: #FFFFFF;
+  font-size: 20px;
+  font-family: 'Noto Sans KR', sans-serif;
+  text-decoration: none;
+}
+
+/* Header */
+.header-container{
+  background-color: #FFFFFF;
+
+}
+
+/* Hidden Items */
+.search-box {
+  width: 1200px;
+  margin: 0 auto;
+  text-align: right;
+  position: relative;
+  top: 0;
+  z-index: 101;
+  
+  transition: 300ms;
+}
+
+.search-box input {
+  background: #fffffa;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+  border-radius: 0px 0px 8px 8px;
+
+  font-size: 24px;
+  line-height: 42px;
+  border: 0;
+  padding: 12px 48px;
+}
+
+.search-box input::placeholder {
+  color: #b3b3b3;
+}
+
+.search-box.active {
+  top: 72px;
+}
+
+/* 금주의 도서 자리 */
+h1{    
+  text-align: center;
+  font-weight: 900;
+}
+
+.books{
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.books{
+  background-color: antiquewhite;
+}
+.summary{
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: antiquewhite;
+}
+
+.summary-content{
+  margin: 0;
+width: 200px;
+  background-color: antiquewhite;
+}
+
+/* 검색아이콘 */
+.nav-btn-container{
+  display: flex;
+  position: relative;   
+}
+
+.nav-btn-container img{
+  position: absolute;
+}
+
+.nav-btn-container .close-btn{
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-8px);
+  transition: 300ms;
+}
+
+.nav-btn-container .search-btn{
+  pointer-events: auto;
+  transition: 300ms;
+}
+
+.nav-btn-container.active .search-btn{
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(-8px);
+}
+
+.nav-btn-container.active .close-btn{
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+
+/* ogp */
+.opg_group{
+  display: flex;
+  justify-content: space-around;
+  
+}
+
+.ogp_class1{
+  margin: 0;
+  width: 300px;
+}
+
+.ogp_class2{
+  margin: 0;
+  width: 300px;
+}
