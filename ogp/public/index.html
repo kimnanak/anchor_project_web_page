@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@500&display=swap" rel="stylesheet">
-
+    
   </head>
   <body>
 
@@ -23,7 +23,7 @@
       <div class="wrapper">
         <nav>
           <div class="logo">
-            <img src="/images/anchor64.png" alt="">
+            <img src="images/anchor64.png" alt="">
             ANCHOR_image
             
           </div>
@@ -105,10 +105,10 @@
           </div>
           </div>
     
+    <div id="columns">
     <div class="opg_group">
-      <div class="ogp_class1">
+      <div class="ogp_class1 ogp">
       <div id="ogp1">
-
       </div>
         <script>
           fetch("/ogp1")
@@ -117,15 +117,14 @@
             })
             .then((res) => {
               document.getElementById("ogp1").innerHTML = 
-              `<a href="${res.ogUrl}"><img height="300" width="300" src="${res.ogImage.url}"/><div><h5>${res.ogTitle}</h5><p>${res.ogDescription}</p></div></a>`;
+              `<a href="${res.ogUrl}"><img width: 320px;	gap: 15px;  width: 90%;	width: 1100px; src="${res.ogImage.url}"/><div><h5>${res.ogTitle}</h5><p>${res.ogDescription}</p></div></a>`;
             });
             
         </script>
       </div>
 
-      <div class="ogp_class2">
+      <div class="ogp_class2 ogp">
       <div id="ogp2">
-
       </div>
         <script>
             fetch("/ogp2")
@@ -134,13 +133,14 @@
               })
               .then((res) => {
                 document.getElementById("ogp2").innerHTML = 
-                `<a href="${res.ogUrl}"><img height="300" width="300" src="${res.ogImage.url}"/><div><h5>${res.ogTitle}</h5><p>${res.ogDescription}</p></div></a>`;
+                `<a href="${res.ogUrl}"><img src="${res.ogImage.url}"/><div><h5>${res.ogTitle}</h5><p>${res.ogDescription}</p></div></a>`;
               });
             
         </script>
       </div>  
     </div>
-      
+    </div>
+    
           <div class="social-icon">
             <img src="images/anchor64.png" alt="">
           </div>
@@ -148,6 +148,7 @@
         </header>
       </div>
     </div>
+
 
     <script src="main.js"></script>
 
